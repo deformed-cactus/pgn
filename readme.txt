@@ -1,26 +1,41 @@
 README
 
-This is a program that allows you to input algebraic notation from 2700chess.com
-and return a pgn.
+This is a program that allows the user to input algebraic notation from 2700chess.com
+and output the move notation in pgn (portable game notation) format, which can then be 
+read by popular chess analysis programs like lichess, chess.com, Stockfish, and others. 
+This program only will convert notation in formats identical to that used by 2700chess. 
 
-You need Java to run this program.
+For example, a chess move on 2700chess is listed in the format 
 
-Instructions to convert algebraic notation to pgn:
-First you need to copy the moves of the game (and only the
-moves) and save them as a .txt file. The file needs to be saved in the same
-folder as this program.
+1 e4 e5 
 
-Then, open your command line and navigate into the program's repository, which
-is called "pgn".
+which cannot be read by a pgn reader. It has to be written as 
 
-To start the program, write java main.java in the command prompt and hit
-return/enter.
+1. e4 e5
 
-The program will ask you for the name of the file where you saved the algebraic
-notation. Type in the name of that file and hit return/enter.
+instead. This program automates the conversion process.
 
-The pgn notation is then returned. You can copy it from the command line into
-lichess analysis board for example, or into a word processor and save as a pgn.
+Java is required to run this program.
+
+Instructions: 
+
+Download the repository, which will henceforth be referred to as pgnr. 
+
+Copy, paste and save the game moves (and only the moves) from 2700chess 
+in algebraic notation, as a .txt file in pgnr. 
+
+Open your command line and navigate into pgnr. 
+
+Run the main.java program. 
+
+The program will request the name of the txt file containing the
+moves that were copy/pasted. Type in the name of that file and hit return/enter.
+
+The converted notation is then returned in the command line, which can be 
+copied into chess analysis software/pgn readers. 
 
 You can test the program on the "test.txt" file in the repository,
-which already has some algebraic notation that requires conversion to pgn.
+which already has algebraic notation in the 2700chess format,  that requires 
+conversion to pgn.
+
+Future updates will include usability improvements. 
