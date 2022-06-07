@@ -20,7 +20,7 @@ public class main{
         Scanner reader = new Scanner(moves);
         while(reader.hasNextLine()){
           String data  = reader.nextLine();
-          data = data.replaceFirst("\\t", ". ");
+          data         = data.replaceFirst("\\t", ". ");
           System.out.println(data);
         }
         reader.close();
