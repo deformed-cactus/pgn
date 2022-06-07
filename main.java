@@ -19,8 +19,7 @@ public class main{
         File moves     = new File(fileName);
         Scanner reader = new Scanner(moves);
         while(reader.hasNextLine()){
-          String data  = reader.nextLine();
-          data         = data.replaceFirst("\\t", ". ");
+          String data  = reader.nextLine().replaceFirst("\\t", ". ");
           System.out.println(data);
         }
         reader.close();
